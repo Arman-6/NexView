@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#a3b7ca">
+
+    <com.google.android.exoplayer2.ui.StyledPlayerView
+        android:id="@+id/playerView"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:keepScreenOn="true"
+        app:use_controller="false" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_bg"
+        android:fontFamily="@font/aleo"
+        android:hint="Email"
+        android:padding="12dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#888888" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rounded_bg"
+        android:fontFamily="@font/aleo"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#888888" />
+
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#194a7a"
+        android:fontFamily="@font/aleo"
+        android:text="LOGIN"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/aleo"
+        android:gravity="center"
+        android:text="Or login with"
+        android:textColor="#476f95" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:id="@+id/oAuth_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/circle_bg"
+            android:contentDescription="Google Sign-In"
+            android:padding="12dp"
+            android:src="@drawable/google" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/aleo"
+        android:padding="8dp"
+        android:text="Don't have an account? Sign Up"
+        android:textColor="#476f95"
+        android:textSize="14sp" />
+</LinearLayout>

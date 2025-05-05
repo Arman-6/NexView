@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#7593af"
+    android:orientation="vertical"
+    tools:context=".pages.ProfileFragment"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mtc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="30dp"
+                app:cardBackgroundColor="#476f95"
+                app:strokeColor="#194a7a"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="80dp"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="center"
+                        >
+                        <ImageView
+                            android:id="@+id/profile_image"
+                            android:layout_width="135dp"
+                            android:layout_height="130dp"
+                            android:scaleType="centerCrop"
+                            android:background="@drawable/circle_image"
+                            />
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Username -->
+                    <TextView
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/aleo"
+                        android:text="User Name"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="26sp"
+                        android:textStyle="bold" />
+
+                    <!-- Email -->
+                    <TextView
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/aleo"
+                        android:paddingTop="10dp"
+                        android:text="Mail Id"
+                        android:textAlignment="center"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="20dp"
+                            >
+
+                            <TextView
+                                android:id="@+id/userTopic"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/aleo"
+                                android:text="Chess"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/aleo"
+                                android:text="Topic"
+
+                                android:textAlignment="center" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            android:background="@color/black"/>
+
+                        <LinearLayout
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="20dp"
+                            >
+                            <TextView
+                                android:id="@+id/dailyGoal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="dailyGoal"
+                                android:textAlignment="center"
+                                android:textStyle="bold"
+                                android:textSize="18sp"
+                                android:textColor="@color/black"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/aleo"
+                                android:text="Daily Goal"
+                                android:textAlignment="center" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            android:background="@color/black"/>
+
+                        <LinearLayout
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="20dp"
+                            >
+
+                            <TextView
+                                android:id="@+id/timeframe"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/aleo"
+                                android:text="Time Fra"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/aleo"
+                                android:text="Time Frame"
+                                android:textAlignment="center" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Daily Consumption"
+                android:fontFamily="@font/aleo"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pieChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="5dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Streak"
+                android:fontFamily="@font/aleo"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:paddingBottom="10dp"
+                android:layout_marginTop="20dp"
+                />
+
+            <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mcv_weekDayTextAppearance="@style/CalendarWeekDayStyle"
+                app:mcv_dateTextAppearance="@style/CalendarDateStyle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Pomodoro"
+                android:fontFamily="@font/aleo"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:paddingBottom="5dp"
+                />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/pomodoroSwitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:checked="true"
+                android:text="Study Timer (25 min work / 5 min break)"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/switch_background"
+                android:padding="12dp"
+                android:elevation="2dp"
+                android:fontFamily="sans-serif-medium" />
+
+            <!-- Logout Button -->
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:backgroundTint="#194a7a"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/aleo"
+                android:text="Logout"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a3b7ca"
+    android:orientation="vertical"
+    tools:context=".session.CreateSessionActivity">
+
+    <!-- Card Layout for creating a session -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/sessionCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#476f95"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="8dp"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+
+            <!-- Create Session Text -->
+            <TextView
+                android:id="@+id/createSessionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/aleo"
+                android:text="Create Session"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <!-- Topic Input -->
+            <EditText
+                android:id="@+id/topicInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#444444"
+                android:fontFamily="@font/aleo"
+                android:hint="Topic"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="16sp" />
+
+            <!-- Daily Goal Input -->
+            <EditText
+                android:id="@+id/dailyGoalInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#444444"
+                android:fontFamily="@font/aleo"
+                android:hint="Daily Goal (hours)"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="16sp" />
+
+            <!-- Timeframe Input -->
+            <EditText
+                android:id="@+id/timeframeInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#444444"
+                android:fontFamily="@font/aleo"
+                android:hint="Timeframe (months)"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="16sp" />
+
+            <!-- Submit Button -->
+            <Button
+                android:id="@+id/submitSessionButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#194a7a"
+                android:fontFamily="@font/aleo"
+                android:text="Submit"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aleo"
+        android:text="Long press to delete the session"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sessionsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:scrollbars="vertical" />
+</LinearLayout>

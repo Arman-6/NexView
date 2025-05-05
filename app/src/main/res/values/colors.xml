@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="appcolor">#7593af</color>
+    <color name="colorPrimary">#6200EE</color> <!-- Primary color for the "Take a Break" button -->
+    <color name="colorAccent">#03DAC5</color> <!-- Accent color for the "Continue" button -->
+    <color name="gray">#757575</color> <!-- Text color for the message -->
+</resources>

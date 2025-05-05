@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "253905827512",
+    "project_id": "nexview-55ddb",
+    "storage_bucket": "nexview-55ddb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:253905827512:android:6562d60a0ea25754cee64d",
+        "android_client_info": {
+          "package_name": "com.example.nexview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "253905827512-tm9jq49rg38p0j50706l2i8008rk79t6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nexview",
+            "certificate_hash": "146b53a910a7222a16c34e23e1cb836c2fc42cbc"
+          }
+        },
+        {
+          "client_id": "253905827512-77rkcdkr2f29vvn799taqh71mrsmej01.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBe-MK-FV-pnqdfQCfD7kAu45WLm9K86_k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "253905827512-77rkcdkr2f29vvn799taqh71mrsmej01.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

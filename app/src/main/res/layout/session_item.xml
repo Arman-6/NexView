@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#476f95"
+    app:cardCornerRadius="30dp"
+    app:cardElevation="8dp"
+    android:id="@+id/action_sessionList_to_dashboardFragment"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Session Topic -->
+        <TextView
+            android:id="@+id/sessionTopic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aleo"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <!-- Daily Goal -->
+        <TextView
+            android:id="@+id/sessionDailyGoal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <!-- Timeframe -->
+        <TextView
+            android:id="@+id/sessionTimeframe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

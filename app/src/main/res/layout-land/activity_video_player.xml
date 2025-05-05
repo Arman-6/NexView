@@ -1,0 +1,166 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#121212">
+    <!-- Toolbar like YouTube -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:theme="@style/ThemeOverlay.MaterialComponents.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            android:visibility="gone"
+            app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <!-- App Logo -->
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/onlylogo"
+                android:contentDescription="Logo"
+                android:layout_marginStart="8dp"/>
+
+            <!-- App Name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NexView"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                android:layout_marginStart="15dp"
+                android:layout_weight="1"/>
+
+            <!-- Search Button -->
+            <ImageButton
+                android:id="@+id/searchButton"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:src="@drawable/search"
+                android:layout_marginStart="160dp"
+                android:scaleType="fitCenter"
+                android:backgroundTint="@color/white"
+                />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youtubePlayerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:keepScreenOn="true" />
+
+        <View
+            android:id="@+id/youtubeOverlay1"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_gravity="top"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="visible"/>
+
+        <!-- Overlay to block YouTube logo (placed at top-right) -->
+        <View
+            android:id="@+id/youtubeOverlay2"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:layout_gravity="right|bottom"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="visible"/>
+    </FrameLayout>
+
+    <!-- Video Details with Channel Logo (Restored from Portrait) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Channel Name -->
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <!-- Buttons (Restored from Portrait) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/likeButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:scaleType="centerInside"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_like" />
+
+        <ImageButton
+            android:id="@+id/dislikeButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:scaleType="centerInside"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_dislike" />
+
+        <ImageButton
+            android:id="@+id/shareButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:scaleType="centerInside"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_share" />
+
+        <ImageButton
+            android:id="@+id/saveButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:scaleType="centerInside"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_save" />
+    </LinearLayout>
+
+    <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <!-- Recommendations -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recommendationRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        app:menu="@menu/bottom_menu_bar"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

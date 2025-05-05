@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">NexView</string>
+    <string name="default_web_client_id">253905827512-77rkcdkr2f29vvn799taqh71mrsmej01.apps.googleusercontent.com</string>
+    <string name="yt_api_key">AIzaSyD9Vfyik1wWsFMhaSAEfFXU69rAxg2VWfM</string>
+    <string-array name="youtube_api_keys">
+        <item>AIzaSyBKeXk7un3BSAHV1C9217Vu1pzXfP8NwOg</item>
+        <item>AIzaSyCDLCZErMrzvvAgVQMEO950VDSLJagXle8</item>
+        <item>AIzaSyD9Vfyik1wWsFMhaSAEfFXU69rAxg2VWfM</item>
+        <item>AIzaSyDAs5wQcfsQ5UxskLEU-bAQvpNVxpWG6X4</item>
+        <item>AIzaSyD9Vfyik1wWsFMhaSAEfFXU69rAxg2VWfM</item>
+        <item>AIzaSyAunnz2gpdvzHnDg8XoHEYnx2-3kCDFpME</item>
+        <item>AIzaSyDfqDXWTO2pBtSQK8fZyilucWN9Vv_nSqY</item>
+        <item>AIzaSyCDPdD1jHoQ_rbZ_BNzPLpviznubKDIQ4w</item>
+        <item>AIzaSyAnhEJw7AEBwbsr5pNswH8JAH5byQLtxP8</item>
+        <item>AIzaSyBL_jb7ieeo3wO46_xJwlkPp0frG8Rnr1w</item>
+        <item>AIzaSyD9Vfyik1wWsFMhaSAEfFXU69rAxg2VWfM</item>
+        <item>AIzaSyAmBu4oQ3mXtku9ltatOpqXRGFvBxzUaFI</item>
+        <item>AIzaSyBuqajJlFLbMU4L68D8ForPsr7xaNB_lzs</item>
+        <item>AIzaSyCaUFVKkDTNg_o_kt-ugh1Vkco1qKOmUD0</item>
+        <item>AIzaSyD1pr6_hpmOb2Qc9SWDWaxTYBHUi7LIoug</item>
+        <item>AIzaSyAunnz2gpdvzHnDg8XoHEYnx2-3kCDFpME</item>
+        <item>AIzaSyCxts-_SZQHK3q5nLBLwqRNw_ra8i-GbzY</item>
+    </string-array>
+</resources>
