@@ -285,7 +285,6 @@ app/
 <hr>
 
 <div align="center">
-  <p>📄 This project is licensed under the <b>MIT License</b></p>
   
   <h2><strong>NexView</strong> – Learn Smarter. Watch Wiser. Stay Focused. 🎯</h2>
 </div>
