@@ -226,7 +226,7 @@ app/
       <td><b>Step 1:</b></td>
       <td>Clone the repository</td>
       <td>
-        <code>git clone https://github.com/yourusername/NexView.git</code>
+        <code>git clone https://github.com/Arman-6/NexView.git</code>
       </td>
     </tr>
     <tr>
