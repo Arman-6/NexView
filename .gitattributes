@@ -1,1 +1,31 @@
-*.xml linguist-language=XML
+# Mark XML files in res directory as Android XML
+res/**/*.xml linguist-language=XML linguist-detectable=true
+
+# Mark layout XML files explicitly
+res/layout/**/*.xml linguist-language=XML linguist-detectable=true
+res/layout-*/**/*.xml linguist-language=XML linguist-detectable=true
+
+# Mark drawable XML files explicitly
+res/drawable/**/*.xml linguist-language=XML linguist-detectable=true
+res/drawable-*/**/*.xml linguist-language=XML linguist-detectable=true
+
+# Mark menu XML files explicitly
+res/menu/**/*.xml linguist-language=XML linguist-detectable=true
+
+# Mark values XML files explicitly
+res/values/**/*.xml linguist-language=XML linguist-detectable=true
+res/values-*/**/*.xml linguist-language=XML linguist-detectable=true
+
+# Mark navigation XML files explicitly
+res/navigation/**/*.xml linguist-language=XML linguist-detectable=true
+
+# Mark other Android-specific files
+*.gradle linguist-language=Gradle
+*.gradle.kts linguist-language=Kotlin
+
+# Mark AndroidManifest as XML
+**/AndroidManifest.xml linguist-language=XML linguist-detectable=true
+
+# Generated files
+**/build/** linguist-generated=true
+**/generated/** linguist-generated=true
