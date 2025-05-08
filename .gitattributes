@@ -1,31 +1,46 @@
-# Mark XML files in res directory as Android XML
-res/**/*.xml linguist-language=XML linguist-detectable=true
+# Force all XML files to be recognized as XML and given higher weight
+*.xml linguist-language=XML linguist-detectable=true
 
-# Mark layout XML files explicitly
+# Give XML files higher weight in language statistics
+*.xml linguist-vendored=false linguist-generated=false linguist-documentation=false
+
+# Mark specific Android XML directories with even higher weighting
+res/**/*.xml linguist-language=XML linguist-detectable=true linguist-vendored=false
+
+# Mark layout XML files explicitly and increase their weight
 res/layout/**/*.xml linguist-language=XML linguist-detectable=true
 res/layout-*/**/*.xml linguist-language=XML linguist-detectable=true
 
-# Mark drawable XML files explicitly
+# Mark drawable XML files explicitly and increase their weight
 res/drawable/**/*.xml linguist-language=XML linguist-detectable=true
 res/drawable-*/**/*.xml linguist-language=XML linguist-detectable=true
 
-# Mark menu XML files explicitly
+# Mark menu XML files explicitly and increase their weight
 res/menu/**/*.xml linguist-language=XML linguist-detectable=true
 
-# Mark values XML files explicitly
+# Mark values XML files explicitly and increase their weight
 res/values/**/*.xml linguist-language=XML linguist-detectable=true
 res/values-*/**/*.xml linguist-language=XML linguist-detectable=true
 
-# Mark navigation XML files explicitly
+# Mark navigation XML files explicitly and increase their weight
 res/navigation/**/*.xml linguist-language=XML linguist-detectable=true
+
+# Also mark any XML files that might be in non-standard locations
+**/res/**/*.xml linguist-language=XML linguist-detectable=true
+**/xml/**/*.xml linguist-language=XML linguist-detectable=true
+app/src/main/res/**/*.xml linguist-language=XML linguist-detectable=true
 
 # Mark other Android-specific files
 *.gradle linguist-language=Gradle
 *.gradle.kts linguist-language=Kotlin
 
+# Fix potentially miscategorized XML files
+*.xml.kt linguist-language=XML
+*_xml.kt linguist-language=XML
+
 # Mark AndroidManifest as XML
 **/AndroidManifest.xml linguist-language=XML linguist-detectable=true
 
-# Generated files
+# Generated files 
 **/build/** linguist-generated=true
 **/generated/** linguist-generated=true
